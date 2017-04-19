@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -25,7 +24,6 @@ public class Nearby extends Fragment {
 
     MapView mMapView;
     private GoogleMap googleMap;
-    GoogleApiClient mGoogleApiClient;
 
     public Nearby() {
         // Required empty public constructor
@@ -58,7 +56,13 @@ public class Nearby extends Fragment {
 
                 // For dropping a marker at a point on the Map
                 LatLng sydney = new LatLng(-6.229728, 106.6894301);
+                LatLng bekasi = new LatLng(-6.299528, 107.6894301);
+                LatLng cikarang = new LatLng(-7.299528, 109.6894301);
+                LatLng tambun = new LatLng(-6.269598, 107.3814371);
                 googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker Title").snippet("Marker Description"));
+                googleMap.addMarker(new MarkerOptions().position(bekasi).title("Marker Title").snippet("Marker Description"));
+                googleMap.addMarker(new MarkerOptions().position(cikarang).title("Marker Title").snippet("Marker Description"));
+                googleMap.addMarker(new MarkerOptions().position(tambun).title("Marker Title").snippet("Marker Description"));
 
                 // For zooming automatically to the location of the marker
                 CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(5).build();

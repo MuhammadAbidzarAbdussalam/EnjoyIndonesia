@@ -189,13 +189,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_nearby) {
-            // Handle the camera action
-        } else if (id == R.id.nav_popular) {
-
-        } else if (id == R.id.nav_choose_location) {
-
-        } else if (id == R.id.nav_news) {
+        if (id == R.id.nav_news) {
             Intent news = new Intent(getApplicationContext(), News.class);
             startActivity(news);
         } else if (id == R.id.nav_share) {

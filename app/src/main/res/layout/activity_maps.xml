@@ -22,8 +22,8 @@
         fab:menu_animationDelayPerItem="55"
         fab:menu_backgroundColor="@android:color/transparent"
         fab:menu_buttonSpacing="0dp"
-        fab:menu_colorNormal="#4CAF50"
-        fab:menu_colorPressed="#D32F2F"
+        fab:menu_colorNormal="@color/colorAccent"
+        fab:menu_colorPressed="@color/colorPrimary"
         fab:menu_colorRipple="#99d4d4d4"
         fab:menu_fab_label="Close"
         fab:menu_fab_size="normal"
@@ -61,16 +61,16 @@
             android:src="@drawable/ic_favorite_black_24dp"
             fab:fab_label="Hybrid"
             fab:fab_size="mini"
-            map:fab_colorNormal="#ff0000"/>
+            map:fab_colorNormal="@color/colorPrimaryDark"/>
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_about"
+            android:src="@drawable/ic_choose_location"
             fab:fab_label="Satellite"
             fab:fab_size="mini"
-            map:fab_colorNormal="#ff0000"/>
+            map:fab_colorNormal="@color/colorPrimaryDark"/>
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item3"
@@ -79,7 +79,7 @@
             android:src="@drawable/ic_favorite_border_black_24dp"
             fab:fab_label="None"
             fab:fab_size="mini"
-            map:fab_colorNormal="#ff0000"/>
+            map:fab_colorNormal="@color/colorPrimaryDark"/>
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item4"
@@ -88,6 +88,6 @@
             android:src="@drawable/ic_terrain_black_24dp"
             fab:fab_label="Terrain"
             fab:fab_size="mini"
-            map:fab_colorNormal="#ff0000"/>
+            map:fab_colorNormal="@color/colorPrimaryDark"/>
     </com.github.clans.fab.FloatingActionMenu>
 </RelativeLayout>
